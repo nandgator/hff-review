@@ -1,0 +1,128 @@
+/* generated from tokens.json, do not edit */
+:root {
+  --c-bg: #F7F0E3;
+  --c-surface: #FFFBF2;
+  --c-ink: #2B1F17;
+  --c-muted: #6B5846;
+  --c-line: #E4D8C3;
+  --c-primary: #A94B22;
+  --c-on-primary: #FFFBF2;
+  --c-honey: #FFB81C;
+  --c-on-honey: #2B1F17;
+  --c-sage: #B9CBB1;
+  --c-on-sage: #3A5537;
+  --c-rose: #EFC3BE;
+  --c-on-rose: #7F3736;
+  --c-sky: #C3D8E4;
+  --c-on-sky: #2D5671;
+  --c-edge: #2B1F17;
+  --c-button-edge: #64331C;
+  --c-tag-edge: #2B1F17;
+  --c-motif-ink: #2B1F17;
+  --c-cell-offset: #9DBCD0;
+  --c-sage-card: #FFFBF2;
+  --c-sage-line: #E4D8C3;
+  --c-rose-card: #FFFBF2;
+  --c-rose-line: #E4D8C3;
+  --c-sky-card: #FFFBF2;
+  --c-sky-line: #E4D8C3;
+  --c-paper-card: #FFFBF2;
+  --c-error: #B3261E;
+  --c-arch-shadow: #2B1F1729;
+  --c-cream-edge: #2B1F17;
+  --c-honey-edge: #2B1F17;
+  --c-sage-edge: #3A5537;
+  --c-rose-edge: #7F3736;
+  --c-sky-edge: #2D5671;
+  --font-heading: "Sentient", serif;
+  --font-body: "DM Sans", sans-serif;
+  --r-chip: 999px;
+  --r-control: 8px;
+  --r-card: 12px;
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme]) {
+  --c-bg: #1E1510;
+  --c-surface: #2B1F17;
+  --c-ink: #F7F0E3;
+  --c-muted: #CDBFAA;
+  --c-line: #43332A;
+  --c-primary: #E58C60;
+  --c-on-primary: #1E1510;
+  --c-honey: #FFB81C;
+  --c-on-honey: #2B1F17;
+  --c-sage: #4E6249;
+  --c-on-sage: #DCE8D6;
+  --c-rose: #6B3B39;
+  --c-on-rose: #EFC3BE;
+  --c-sky: #2F4A5A;
+  --c-on-sky: #C3D8E4;
+  --c-edge: #D9B98A;
+  --c-button-edge: #F3C6AC;
+  --c-tag-edge: #FFB81C;
+  --c-motif-ink: #F7F0E3;
+  --c-cell-offset: #182A35;
+  --c-sage-card: #2C3A2A;
+  --c-sage-line: #4A5C46;
+  --c-rose-card: #47282A;
+  --c-rose-line: #6E4644;
+  --c-sky-card: #243A48;
+  --c-sky-line: #475D6A;
+  --c-paper-card: #34261C;
+  --c-error: #FFB4AB;
+  --c-arch-shadow: #00000066;
+  --c-cream-edge: #A59D93;
+  --c-honey-edge: #664A18;
+  --c-sage-edge: #B4C2AF;
+  --c-rose-edge: #CA9D99;
+  --c-sky-edge: #9AB0BD;
+} }
+/* with scripts the page pins its theme (data-theme) and every colour is its light value mixed toward its dark value by --dk
+   (0 light, 1 dark). A theme change animates that one number, so every colour on the page moves on one clock and text stays
+   live text (Shell.astro). Without scripts the media query above follows the system. */
+@property --dk { syntax: "<number>"; inherits: true; initial-value: 0; }
+:root[data-theme="dark"] { --dk: 1; }
+:root[data-theme] {
+  --c-bg: color-mix(in oklab, #F7F0E3, #1E1510 calc(var(--dk) * 100%));
+  --c-surface: color-mix(in oklab, #FFFBF2, #2B1F17 calc(var(--dk) * 100%));
+  --c-ink: color-mix(in oklab, #2B1F17, #F7F0E3 calc(var(--dk) * 100%));
+  --c-muted: color-mix(in oklab, #6B5846, #CDBFAA calc(var(--dk) * 100%));
+  --c-line: color-mix(in oklab, #E4D8C3, #43332A calc(var(--dk) * 100%));
+  --c-primary: color-mix(in oklab, #A94B22, #E58C60 calc(var(--dk) * 100%));
+  --c-on-primary: color-mix(in oklab, #FFFBF2, #1E1510 calc(var(--dk) * 100%));
+  --c-honey: #FFB81C;
+  --c-on-honey: #2B1F17;
+  --c-sage: color-mix(in oklab, #B9CBB1, #4E6249 calc(var(--dk) * 100%));
+  --c-on-sage: color-mix(in oklab, #3A5537, #DCE8D6 calc(var(--dk) * 100%));
+  --c-rose: color-mix(in oklab, #EFC3BE, #6B3B39 calc(var(--dk) * 100%));
+  --c-on-rose: color-mix(in oklab, #7F3736, #EFC3BE calc(var(--dk) * 100%));
+  --c-sky: color-mix(in oklab, #C3D8E4, #2F4A5A calc(var(--dk) * 100%));
+  --c-on-sky: color-mix(in oklab, #2D5671, #C3D8E4 calc(var(--dk) * 100%));
+  --c-edge: color-mix(in oklab, #2B1F17, #D9B98A calc(var(--dk) * 100%));
+  --c-button-edge: color-mix(in oklab, #64331C, #F3C6AC calc(var(--dk) * 100%));
+  --c-tag-edge: color-mix(in oklab, #2B1F17, #FFB81C calc(var(--dk) * 100%));
+  --c-motif-ink: color-mix(in oklab, #2B1F17, #F7F0E3 calc(var(--dk) * 100%));
+  --c-cell-offset: color-mix(in oklab, #9DBCD0, #182A35 calc(var(--dk) * 100%));
+  --c-sage-card: color-mix(in oklab, #FFFBF2, #2C3A2A calc(var(--dk) * 100%));
+  --c-sage-line: color-mix(in oklab, #E4D8C3, #4A5C46 calc(var(--dk) * 100%));
+  --c-rose-card: color-mix(in oklab, #FFFBF2, #47282A calc(var(--dk) * 100%));
+  --c-rose-line: color-mix(in oklab, #E4D8C3, #6E4644 calc(var(--dk) * 100%));
+  --c-sky-card: color-mix(in oklab, #FFFBF2, #243A48 calc(var(--dk) * 100%));
+  --c-sky-line: color-mix(in oklab, #E4D8C3, #475D6A calc(var(--dk) * 100%));
+  --c-paper-card: color-mix(in oklab, #FFFBF2, #34261C calc(var(--dk) * 100%));
+  --c-error: color-mix(in oklab, #B3261E, #FFB4AB calc(var(--dk) * 100%));
+  --c-arch-shadow: color-mix(in oklab, #2B1F1729, #00000066 calc(var(--dk) * 100%));
+  --c-cream-edge: color-mix(in oklab, #2B1F17, #A59D93 calc(var(--dk) * 100%));
+  --c-honey-edge: color-mix(in oklab, #2B1F17, #664A18 calc(var(--dk) * 100%));
+  --c-sage-edge: color-mix(in oklab, #3A5537, #B4C2AF calc(var(--dk) * 100%));
+  --c-rose-edge: color-mix(in oklab, #7F3736, #CA9D99 calc(var(--dk) * 100%));
+  --c-sky-edge: color-mix(in oklab, #2D5671, #9AB0BD calc(var(--dk) * 100%));
+}

@@ -1,0 +1,12 @@
+/* generated from tokens.json for the design-taste kit, do not edit */
+:root {
+  --p-bg: #F7F0E3; --p-surface: #FFFBF2; --p-ink: #2B1F17; --p-muted: #6B5846;
+  --p-accent: #A94B22; --p-accent-ink: #FFFBF2; --p-action: #A94B22; --p-action-ink: #FFFBF2;
+  --p-inv-bg: #2B1F17; --p-inv-surface: #372B23; --p-inv-ink: #F7F0E3; --p-inv-muted: #A3998E;
+  --p-inv-accent: #F7F0E3; --p-inv-accent-ink: #2B1F17; --p-inv-action: #F7F0E3; --p-inv-action-ink: #2B1F17;
+  --font-display: "Sentient", Georgia, serif;
+  --font-text: "DM Sans", system-ui, sans-serif;
+  --display-weight: 500;
+  --display-tracking: -0.02em;
+  --display-tracking-xl: -0.026em;
+}
